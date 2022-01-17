@@ -2,7 +2,8 @@ import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { SendgridService } from './sendgrid/sendgrid.service';
-import { ConfigModule } from '@nestjs/config'
+import { ConfigModule } from '@nestjs/config';
+
 
 @Module({
   imports: [ConfigModule.forRoot()],
